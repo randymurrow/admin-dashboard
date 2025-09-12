@@ -10,28 +10,50 @@
     </style>
 </head>
 <body>
-    <div id="container">
-        <div id="sidebar" class="white">
-            <div id="title" class="heavy big">
+    <div id="container" class="grid">
+        <div id="sidebar" class="white grid blue-bg">
+            <div id="title" class="heavy fontXL grid icon-2-col">
                 <img src="images/view-dashboard.svg" alt="dashboard" class="icon">
                 Dashboard
             </div>
-            <ul id="nav-main" class="bold">
-                <li><img src="images/home.svg" alt="home" class="icon">Home</li>
-                <li><img src="images/card-account-details-outline.svg" alt="profile" class="icon">Profile</li>
-                <li><img src="images/message-reply.svg" alt="messages" class="icon">Messages</li>
-                <li><img src="images/clock-time-three.svg" alt="history" class="icon">History</li>
-                <li><img src="images/note-multiple.svg" alt="tasks" class="icon">Tasks</li>
-                <li><img src="images/account-group.svg" alt="communities" class="icon">Communities</li>
+            <ul id="nav-main" class="bold fontLg">
+                <li class="grid icon-2-col"><img src="images/home.svg" alt="home" class="icon">Home</li>
+                <li class="grid icon-2-col"><img src="images/card-account-details-outline.svg" alt="profile" class="icon">Profile</li>
+                <li class="grid icon-2-col"><img src="images/message-reply.svg" alt="messages" class="icon">Messages</li>
+                <li class="grid icon-2-col"><img src="images/clock-time-three.svg" alt="history" class="icon">History</li>
+                <li class="grid icon-2-col"><img src="images/note-multiple.svg" alt="tasks" class="icon">Tasks</li>
+                <li class="grid icon-2-col"><img src="images/account-group.svg" alt="communities" class="icon">Communities</li>
             </ul>
-            <ul id="nav-util" class="bold">
-                <li><img src="images/cog.svg" alt="settings" class="icon">Settings</li>
-                <li><img src="images/help-box.svg" alt="support" class="icon">Support</li>
-                <li><img src="images/shield-check.svg" alt="privacy" class="icon">Privacy</li>
+            <ul id="nav-util" class="bold fontLg">
+                <li class="grid icon-2-col"><img src="images/cog.svg" alt="settings" class="icon">Settings</li>
+                <li class="grid icon-2-col"><img src="images/help-box.svg" alt="support" class="icon">Support</li>
+                <li class="grid icon-2-col"><img src="images/shield-check.svg" alt="privacy" class="icon">Privacy</li>
             </ul>
         </div>
-        <div id="header">
-
+        <div id="header" class="grid">
+            <div id="header-search" class="grid icon-2-col">
+                <img src="images/magnify.svg" alt="search" class="icon">
+                <input id="search"></input>
+            </div>
+            <div id="header-user" class="grid icon-2-col">
+                <img src="images/bell-ring-outline.svg" alt="alert" class="icon">
+                <div class="grid icon-2-col">
+                    <img src="images/user-1.jpg" alt="Randy" class="avatar">
+                    <span class="bold fontMd">Randy Murrow</span>
+                </div>
+            </div>
+            <div class="grid icon-2-col">
+                <img src="images/user-1.jpg" alt="Randy" class="avatar big">
+                <div class="pad-left">
+                    <p class="fontSm bold">Hi there,</p>
+                    <p class="fontXL bold">Randy Murrow (@randyman)</p>
+                </div>
+            </div>
+            <div id="header-btns" class="grid">
+                <button class="white blue-bg fontMd">New</button>
+                <button class="white blue-bg fontMd">Upload</button>
+                <button class="white blue-bg fontMd">Share</button>
+            </div>
         </div>
         <div id="main">
 
