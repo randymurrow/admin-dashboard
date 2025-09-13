@@ -15,7 +15,7 @@ body {
 }
 
 .heavy {
-    font-weight: 800;
+    font-weight: 900;
 }
 
 .bold {
@@ -24,6 +24,10 @@ body {
 
 .white {
     color: rgba(255, 255, 255, 0.9);
+}
+
+.dark-grey {
+    color: rgb(43, 43, 43);
 }
 
 .fontXL {
@@ -39,11 +43,15 @@ body {
 }
 
 .fontSm {
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 .blue-bg {
     background-color: #1992D4;
+}
+
+.grey-bg {
+    background-color: rgb(232, 234, 240);
 
 }
 
@@ -52,7 +60,7 @@ body {
 }
 
 #container {
-    grid-template: 1fr 5fr / 1fr 4fr;
+    grid-template: 1fr 5fr / auto;
     grid-template-areas:
         "side head"
         "side main"
@@ -64,12 +72,12 @@ body {
     grid-area: side;
     gap: 50px;
     padding: 25px;
-    height: 100vh;
+    height: auto;
 }
 
 .icon-2-col {
     grid-template-columns: 2.5rem auto;
-    gap: 10px;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -86,7 +94,9 @@ body {
 
 #main {
     grid-area: main;
-    background-color: #E2E8F0;
+    grid-template-columns: 3fr 1fr;
+    padding: 1.5rem 1rem;
+    gap: 5px;
 }
 
 #sidebar li {
@@ -109,7 +119,6 @@ body {
 }
 
 #search {
-    background-color: rgb(232, 234, 240);
     border: none;
     border-radius: 20px;
     font-size: 1.5rem;
@@ -118,13 +127,13 @@ body {
 
 .avatar {
     border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.8rem;
+    height: 2.8rem;
 }
 
 .big {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .pad-left {
