@@ -78,7 +78,7 @@ body {
 }
 
 #container {
-    grid-template: 1fr 5fr / auto;
+    grid-template: 1fr 5fr / 1fr 5fr;
     grid-template-areas:
         "side head"
         "side main"
@@ -177,6 +177,16 @@ button {
     margin-bottom: 1rem;
 }
 
+#projects ul {
+    grid-template: repeat(3, auto) / 1fr 1fr;
+    gap: 25px;
+}
+
+#projects li {
+    border-left: .6rem solid rgba(226, 127, 14, 0.859);
+    grid-template-rows: repeat(2, min-content) auto;
+}
+
 #announcements {
     margin-bottom: 2.5rem;
 }
@@ -189,9 +199,16 @@ button {
 
 #announcements li:last-child {
     border: none;
-    padding-bottom: 0;
+    padding-bottom: 0   ;
 }
 
 #trending {
     gap: 1.5rem;
+}
+
+.react {
+    margin-top: 1.1rem;
+    align-self: end;
+    justify-self: end;
+    word-spacing: 1.2rem;
 }
