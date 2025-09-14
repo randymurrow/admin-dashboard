@@ -6,12 +6,12 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 .heavy {
@@ -83,6 +83,7 @@ body {
         "side head"
         "side main"
     ;
+    height: 100vh;
 }
 
 #sidebar {
